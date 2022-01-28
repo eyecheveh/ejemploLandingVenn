@@ -2,6 +2,10 @@
     --negroVenn: #002b39;
 }
 
+html{
+    font-family: 'Hind', Helvetica, Arial, Lucida, sans-serif;
+}
+
 /*Logo centrado */
 #logoVenn{
     display: block;
@@ -13,6 +17,10 @@ h1{
     text-align: center;
     color: var(--negroVenn);
     font-size: 35px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style:normal ;
+    letter-spacing: normal;
 }
 
 button{
