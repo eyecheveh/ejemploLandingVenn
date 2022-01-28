@@ -1,3 +1,7 @@
+:root {
+    --negroVenn: #002b39;
+}
+
 /*Logo centrado */
 #logoVenn{
     display: block;
@@ -5,3 +9,9 @@
     width: 100px;
     height: 100px;
 }
+h1{
+    text-align: center;
+    color: var(--negroVenn);
+    font-size: 35px;
+}
+
