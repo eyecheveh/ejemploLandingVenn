@@ -1,0 +1,7 @@
+/*Logo centrado */
+#logoVenn{
+    display: block;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+}
