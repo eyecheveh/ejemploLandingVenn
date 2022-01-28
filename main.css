@@ -6,6 +6,10 @@ html{
     font-family: 'Hind', Helvetica, Arial, Lucida, sans-serif;
 }
 
+body{
+    margin: 0px;
+    padding: 0px;
+}
 p{
     font-family: Hind;
     font-size: 18px;
@@ -23,6 +27,7 @@ p{
     margin: auto;
     width: 100px;
     height: 100px;
+    padding-top: 50px;
 }
 h1,h2{
     text-align: center;
@@ -59,6 +64,16 @@ button{
     background-color: #FFFFFF;
 }
 
+#seccionPrincipal{
+    padding: 0px;
+    margin: 0px;
+    background-image: url("/img/Grupo 9213.webp");
+
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    width: 100%;
+}
 #tarjeta{
     padding: 10px;
     max-height: 280px;
