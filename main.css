@@ -6,6 +6,17 @@ html{
     font-family: 'Hind', Helvetica, Arial, Lucida, sans-serif;
 }
 
+p{
+    font-family: Hind;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.17;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--negroVenn);
+}
 /*Logo centrado */
 #logoVenn{
     display: block;
@@ -13,7 +24,7 @@ html{
     width: 100px;
     height: 100px;
 }
-h1{
+h1,h2{
     text-align: center;
     color: var(--negroVenn);
     font-size: 35px;
@@ -21,6 +32,17 @@ h1{
     font-stretch: normal;
     font-style:normal ;
     letter-spacing: normal;
+}
+h5{
+    font-family: Hind;
+    font-size: 27px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.19;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--negroVenn);
 }
 
 button{
@@ -35,4 +57,24 @@ button{
     border-radius: 5px;
     font-size: 18px;
     background-color: #FFFFFF;
+}
+
+#tarjeta{
+    padding: 10px;
+    max-height: 280px;
+    background-image:url("/img/Rectángulo 8151.webp") no-repeat center center fixed ;
+    background-size: cover;
+     width: 90%;
+    margin: auto;
+}
+#tarjeta>img{
+    width: 170px;
+    height: 180px;
+    display: inline-block;
+    position: relative;
+    top: 40px;
+    left: 89px;
+}
+#tarjeta>h3,#tarjeta>h5{
+    display: inline-block;
 }
