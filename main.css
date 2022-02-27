@@ -21,23 +21,32 @@ p{
     text-align: center;
     color: var(--negroVenn);
 }
+.negrita{
+  font-weight: bold
+}
 /*Logo centrado */
 #logoVenn{
     display: block;
     margin: auto;
     width: 100px;
     height: 100px;
-    padding-top: 50px;
+    padding-top: 40px;
 }
 h1,h2{
     text-align: center;
+    margin:0;
     color: var(--negroVenn);
-    font-size: 35px;
+    font-size: 2.6rem;
     font-weight: bold;
     font-stretch: normal;
-    font-style:normal ;
+    font-style:normal;
     letter-spacing: normal;
 }
+h2{
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+  
 h5{
     font-family: Hind;
     font-size: 27px;
@@ -49,6 +58,15 @@ h5{
     text-align: center;
     color: var(--negroVenn);
 }
+h6{
+  font-family: Hind;
+    font-size: 23px;
+    font-weight: lighter;
+    line-height: 0.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--negroVenn);
+}
 
 button{
     display: block;
@@ -56,40 +74,817 @@ button{
     padding: 15px 45px 11px 46px;
     object-fit: contain;
     box-shadow: 0 9px 12px 0 rgb(26 72 100 / 16%);
-    background-image: linear-gradient(to top, #007fff, #00b1ff -10%);
+    background-image: linear-gradient(0deg,#007fff 0%,#00b1ff 100%);;
     color: #FFFFFF;
     border-width: 0 ;
     border-radius: 5px;
     font-size: 18px;
     background-color: #FFFFFF;
+    cursor: pointer;
+     }
+.espacioCuadricula{
+  margin-top: -10%;
+}
+
+button:hover{
+    color: rgb(0, 140, 255);
+    border: 1.5px solid rgb(0, 140, 255);
+    background: white;
+
 }
 
 #seccionPrincipal{
     padding: 0px;
     margin: 0px;
     background-image: url("/img/Grupo 9213.webp");
-
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: 50%;
     background-size: cover;
     width: 100%;
+    }
+
+.espacio{
+    padding-top: 100px;
+    padding-bottom: 250px;
+   
 }
-#tarjeta{
-    padding: 10px;
-    max-height: 280px;
-    background-image:url("/img/Rectángulo 8151.webp") no-repeat center center fixed ;
-    background-size: cover;
-     width: 90%;
+.espacio0{
+      padding-bottom: 100px;
+    }
+
+.cuadricula{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
     margin: auto;
+    gap: 20px;
+    width: 90%;
+    }
+
+
+--
+.container-tarjeta{
+max-width: 100%;
 }
-#tarjeta>img{
-    width: 170px;
-    height: 180px;
-    display: inline-block;
+.container-tarjeta{
+  display: flex;
+  justify-content: center;
+}
+.tarjeta1 {  display: grid;
+  position: absolute;
+  grid-template-columns: 0.6fr 1.4fr;
+  grid-template-rows: auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  grid-template-areas:
+    "picture informacion";
+  grid-area: tarjeta1;
+  margin-top: -490px;
+  width: 700px;
+  border: solid 1px #c3d5e0;
+  background:linear-gradient(to bottom, #fff, #fff 78%, #f0feff);
+  padding-bottom: 10px;
+  padding-right: 20px;
+}
+
+.picture {  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-items: end;
+  align-items: center;
+  grid-template-areas:
+    "Imagencita";
+  grid-area: picture;
+  position: relative;
+
+}
+
+.Imagencita { grid-area: Imagencita; 
+  width: 100%;}
+  
+    .Imagencita>img{
+      width: 225px;
+      height: 250px;
+    }
+
+.informacion {  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  justify-items: start;
+  grid-template-areas:
+    "nombre-psicologa"
+    "cargo"
+    "parrafito1";
+  grid-area: informacion;
+}
+
+.nombre-psicologa {  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  align-items: center;
+  grid-template-areas:
+    "name";
+  grid-area: nombre-psicologa;
+}
+
+.name { grid-area: name; }
+
+.cargo {  display: grid;
+  grid-template-columns: 0.6fr 1.4fr;
+  grid-template-rows: auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  align-items: center;
+  grid-template-areas:
+    "cargo-psico stars";
+  grid-area: cargo;
+}
+.carguito{
+  font-size: 1.1em;
+  color: #007fff;
+
+}
+.parrafo1{
+  text-align: left;
+}
+.cargo-psico { grid-area: cargo-psico;
+ }
+ .stars {
+  display: flex;
+}
+.estrellas { display: flex;}
+
+.parrafito1 {  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "textico1";
+  grid-area: parrafito1;
+  justify-items: start;
+
+}
+
+.textico1 { grid-area: textico1; }
+
+.intermedio>img{
+  max-width: 95%;
+}
+
+
+.tarjetaCaracteristica{
+    text-align: center;
+    justify-self: center;
+    border-radius: 10px;
+    padding: 22px 5%;
+    box-shadow: 0 20px 15px 0 rgb(26 72 100 / 10%);
+    border: solid 1px #c3d5e0;
+    background:linear-gradient(to bottom, #fff, #fff 78%, #f0feff);
+    width: 75%;
+    cursor: pointer;        
+}
+.tarjetaCaracteristica:hover{
+    color: blue;
+    border: 1px solid rgb(0, 140, 255);
+}
+.tarjetaCaracteristica
+.negritas{
+    font-weight: bolder;
+}
+#ultimoBoton{
+    margin-top: 50px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-weight: bold;
+}
+
+#segundaSeccion{
+    padding: 0px;
+    margin: 0px;
+    background-image: url("/img/Enmascarar grupo 259@3x.webp");
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: cover;
+    max-width: 100%;
+    }
+
+    .tarjetas {  display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        align-items: center;
+        grid-template-areas:
+          "Section1-container";
+      }
+      
+      .Section1-container {  display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-column-gap: 20px;
+        grid-auto-flow: row;
+        justify-items: center;
+        grid-template-areas:
+          "tarjetaProductos1 tarjetaProductos2 tarjetaProductos3";
+        grid-area: Section1-container;
+        align-items: center;
+      }
+      
+      .tarjetaProductos1 {  display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "tarjetita1";
+        grid-area: tarjetaProductos1;
+        border: 1px solid rgb(228, 228, 228);
+        border-radius: 10px;
+        box-shadow: 0px 15px 15px 0px #b3b3b3;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        max-width: 80%;
+        padding-bottom: 20px;
+      }
+      
+      .tarjetita1 { grid-area: tarjetita1; }
+      
+      .tarjetaProductos2 {  display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "tarjetita2";
+        grid-area: tarjetaProductos2;
+        border: 1px solid rgb(228, 228, 228);
+    border-radius: 10px;
+    box-shadow: 0px 15px 15px 0px #b3b3b3;
+    margin-right: 10px;
+    justify-items: center;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        max-width: 80%;
+        padding-bottom: 20px;
+      }
+      
+      .tarjetita2 { grid-area: tarjetita2; }
+      
+      .tarjetaProductos3 {  display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "tarjetita3";
+        grid-area: tarjetaProductos3;
+        border: 1px solid rgb(228, 228, 228);
+        box-shadow: 0px 15px 15px 0px #b3b3b3;
+        border-radius: 10px;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        max-width: 80%;
+        padding-bottom: 20px;
+      }
+      
+      .tarjetita3 { grid-area: tarjetita3; }
+      .tamañoimg{
+        max-width: 100%;
+      }
+      .tamañoimg2{
+      max-width: 100%;
+    }
+    .tamañoimg3{
+      max-width: 100%;
+    }
+    .textico-info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .titulitosection2{
+        font-size: 2vw;;
+       }
+    .descripcionsection2{
+        font-size: 1.3vw;
+        font-weight:300;
+        line-height: 1.6;
+    }
+      
+.Section-3 {  display: grid;
+  padding-left: 10%;
+  padding-right: 10%;
     position: relative;
-    top: 40px;
-    left: 89px;
+grid-template-columns: 1fr;
+grid-template-rows: 1fr;
+grid-auto-columns: 1fr;
+gap: 0px 0px;
+grid-auto-flow: row;
+grid-template-areas:
+    "Barrita-servicios";
 }
-#tarjeta>h3,#tarjeta>h5{
-    display: inline-block;
+
+.Barrita-servicios {  display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 0.6fr 1fr;
+gap: 0px 0px;
+grid-auto-flow: row;
+grid-template-areas:
+    "title"
+    "servicios";
+grid-area: Barrita-servicios;
+}
+
+.title {  display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 1fr;
+gap: 0px 0px;
+grid-auto-flow: row;
+justify-items: center;
+align-items: center;
+grid-template-areas:
+    "titulito";
+grid-area: title;
+}
+
+.titulito { grid-area: titulito; }
+
+.servicios { display: grid; 
+    padding-top: 40px;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 0px 0px; 
+    cursor: pointer;
+    grid-template-areas: 
+      "Crear-cuenta Completar-perfil Crear-curso-online"
+      "titulo-crear-cuenta titulo-completar-perfil titulo-crear-curso-online"; 
+    justify-items: center; 
+    align-items: center; 
+    grid-area: servicios; 
+    }
+
+.Crear-cuenta { grid-area: Crear-cuenta;
+}
+
+.Completar-perfil { grid-area: Completar-perfil; }
+
+.Crear-curso-online { grid-area: Crear-curso-online; }
+
+.titulo-crear-cuenta { grid-area: titulo-crear-cuenta; }
+
+.titulo-completar-perfil { grid-area: titulo-completar-perfil; }
+
+.titulo-crear-curso-online { grid-area: titulo-crear-curso-online; }
+.Linea1{
+position: absolute;
+display: flex;
+max-width: 19.3%;
+height: 5px;
+margin-top: -117px;
+margin-left: 9.9%;
+}
+.Linea2{
+    display: flex;
+    position: absolute;
+    max-width: 19.3%;
+    margin-top: -117px;
+    margin-left: -16.7%;
+    height: 5px;
+}
+  .tarjetita{
+      width: 250px;
+  }
+.numero1{
+    margin-top: -50px;
+    position: absolute;
+    margin-left: 67px;
+}
+.numero2{
+    margin-top: -50px;
+    position: absolute;
+    margin-left: 65px;
+}
+.numero3{
+    margin-top: -50px;
+    position: absolute;
+    margin-left: 60px;
+}
+.Btn{
+    padding-bottom: 80px;
+    cursor: pointer;
+    
+}
+
+.estrellas{
+    margin-left: 265px;
+    padding-top: 2px;
+    padding-bottom: 20px;
+}
+.Ft-section{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    background-color: #007fff;
+    height: 100%;
+    align-items: center;
+    font-size: 13px;
+}
+.cont1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 110px;
+    width: 80%;
+}
+.fb{
+    padding-left: 22px;
+}
+.logos-redes-sociales{
+    display: flex;
+    flex-direction: row;
+}
+.cont2{
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    height: 75%;
+    width: 80%;
+    padding-top: 3%;
+}
+.ultima-info{
+    display: flex;
+    justify-content: flex-end;
+    gap: 60px;
+    font-weight: 550;
+    padding-bottom: 48px;
+   }
+
+
+@media screen and (max-width: 980px){
+    .tarjetas {  display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        align-items: center;
+        grid-template-areas:
+          "Section1-container";
+      }
+      
+      .Section1-container {  display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        justify-items: center;
+        align-items: center;
+        grid-template-areas:
+          "tarjetaProductos1"
+          "tarjetaProductos2"
+          "tarjetaProductos3";
+        grid-area: Section1-container;
+        }
+      
+      .tarjetaProductos1 {  display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        grid-template-areas:
+          "tarjetita1";
+        grid-area: tarjetaProductos1;
+        max-width: 40%;
+        }
+      
+      .tarjetita1 { grid-area: tarjetita1; }
+      
+      .tarjetaProductos2 {  display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        grid-template-areas:
+          "tarjetita2";
+        grid-area: tarjetaProductos2;
+        max-width: 40%;
+        margin-top: 60px;
+        margin-bottom: 60px;
+      }
+      
+      .tarjetita2 { grid-area: tarjetita2; }
+      
+      .tarjetaProductos3 {  display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        grid-template-areas:
+          "tarjetita3";
+        grid-area: tarjetaProductos3;
+        max-width: 40%;
+      }
+      
+      .tarjetita3 { grid-area: tarjetita3; }
+      
+      /*sección 3 */
+      .container {  display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "Barrita-servicios";
+      }
+      
+      .Barrita-servicios {  display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 2fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "title"
+          "servicios";
+        grid-area: Barrita-servicios;
+      }
+      
+      .title {  display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        grid-template-areas:
+          "titulito";
+        grid-area: title;
+      }
+      
+      .titulito { grid-area: titulito; }
+      .textico-info{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: 
+        center;
+    }
+    .titulitosection2{
+      font-size: 3vw;
+  }
+  .descripcionsection2{
+      font-size: 1.7vw;
+      font-weight:300;
+      line-height: 1.6;
+  }
+      .servicios {  display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        grid-area: servicios;
+              }
+      
+      .Crear-cuenta { grid-area: 1 / 1 / 2 / 2; 
+        border: solid 1px #c3d5e0;
+        background:linear-gradient(to bottom, #fff, #fff 78%, #f0feff);
+        border-radius: 12px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-right: 40px;
+        padding-left: 40px;
+        margin-bottom: 50px;
+            }
+      
+      .Completar-perfil { grid-area: 2 / 1 / 3 / 2;
+        border: solid 1px #c3d5e0;
+        border-radius: 12px;
+        background:linear-gradient(to bottom, #fff, #fff 78%, #f0feff);
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-right: 40px;
+        padding-left: 40px;
+        margin-bottom: 50px;
+    }
+        
+      .Crear-curso-online { grid-area: 3 / 1 / 4 / 2; 
+        border: solid 1px #c3d5e0;
+        border-radius: 12px;
+        background:linear-gradient(to bottom, #fff, #fff 78%, #f0feff);
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-right: 40px;
+        padding-left: 40px;
+        margin-bottom: 50px;
+    }
+
+      
+      .titulo-crear-cuenta { grid-area: 1 / 1 / 2 / 2; 
+        margin-top: 120px;
+    }
+      
+      .titulo-completar-perfil { grid-area: 2 / 1 / 3 / 2; 
+        margin-top: 120px;}
+      
+      .titulo-crear-curso-online { grid-area: 3 / 1 / 4 / 2; 
+        margin-top: 120px;}
+
+      .Linea1{
+        opacity:0.0;
+      }
+      .Linea2{
+        opacity:0.0;
+      }
+      .numero1{
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+      .numero2{
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+      .numero3{
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+}
+@media screen and (max-width: 767px){   
+
+.tarjeta1{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 430px;
+  margin-top:-370px;
+  }
+  .container-tarjeta{
+    padding-bottom: 200px;
+  }
+  .stars{
+    width: 100%;
+  position: absolute;
+display: flex;
+justify-content: center;
+align-items: center;
+top:  -415px;
+right: 125px;
+  }
+
+  .informacion{
+    display: flex;
+    max-width: 100%;
+    flex-direction: column-reverse;
+  }
+  .picture{
+    position: absolute;
+    display: flex;
+    bottom: 310px;
+    left: 48px;
+  }
+  .nombre-psicologa{
+    display: flex;
+  }
+  .nombre-psico{
+    margin-left: 100px;
+    margin-top: -10px;
+  }
+  .name{
+    display: flex;
+  }
+.cargo{
+  position: absolute;
+  display: flex;
+  width: 100%;
+  top: 500px;
+
+}
+.carguito{
+  margin-left: 115px;
+  margin-top: -115px;
+}
+.parrafito1{
+  margin-left: 45px;
+  margin-top: 35px;
+  display: flex;
+  padding-top: 60px;
+  width: 75%;
+}
+.parrafo1{
+  text-align: left;
+}
+
+
+
+.cont1{
+  flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    width: 80%;
+}
+.fb{
+    padding-left: 22px;
+}
+.cont2{
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+.ultima-info{
+    display: flex;
+    gap: 60px;
+    margin-top: 40px;
+}
+.intermedio{
+  max-width: 100%;
+  text-align: center;
+}
+.intermedio>img{
+  width: 51%;
+}
+}
+@media screen and (max-width: 640px){
+  .ultima-info{
+    flex-direction: column;
+    display:flex;
+    align-items: center;
+    grid-row-gap: 10px;
+}   
+
+}
+@media screen and (max-width: 586px){
+  .titulitosection2{
+    font-size: 3.7vw;;
+  }
+  .descripcionsection2{
+    font-size: 2.7vw;
+    font-weight:300;
+    line-height: 1.6;
+  }
+   
+}
+
+@media screen and (max-width: 940px){
+    .cuadricula{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        margin: auto;
+        gap: 20px;
+        width: 90%;
+    }
+ @media screen and (max-width: 320px){
+     .cuadricula{
+        display: grid;
+        grid-template-columns: 2fr;
+        margin: auto;
+        gap: 20px;
+        width: 90%;
+        }
+}   
+
+/*img.svg*/
+
 }
